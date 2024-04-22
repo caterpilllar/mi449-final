@@ -1,12 +1,12 @@
 
 import './App.css';
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 import {TweenLite} from "gsap";
 
 
 import { createClient } from '@supabase/supabase-js';
-import { hover } from '@testing-library/user-event/dist/hover';
+// import { hover } from '@testing-library/user-event/dist/hover';
 
 const supabaseUrl = 'https://tnmvuhleqrqasrdlpbgi.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRubXZ1aGxlcXJxYXNyZGxwYmdpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTM2Nzk5MjYsImV4cCI6MjAyOTI1NTkyNn0._HCbE90YXgDtUL8OgXUO5eD74Bl8l4kNKxXv2THg6_o';
@@ -22,7 +22,7 @@ fetch(URL)
   .catch(error => console.error(error));
 
 async function getAlbums(){
-  let { data: albums, error } = await supabase
+  let { data: albums } = await supabase
     .from('albums')
     .select('*');
   
@@ -51,7 +51,7 @@ async function getAlbums(){
 
 
   async function getPlaylists(){
-    let { data: playlists, error } = await supabase
+    let { data: playlists } = await supabase
       .from('playlists')
       .select('*');
     

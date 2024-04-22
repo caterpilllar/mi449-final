@@ -79,18 +79,19 @@ async function getAlbums(){
 
 const title = document.getElementById('title');
 
-const hello = () => {
-  window.alert('start animation');
-}
+// const hello = () => {
+//   window.alert('start animation');
+// }
 
-const done = () => {
-  window.alert('done');
-}
+// const done = () => {
+//   window.alert('done');
+// }
 
 TweenLite.fromTo(title, 1, 
   {
     backgroundColor: '#a5f3fc',
     x: -200,
+    repeat:-1
   },
   {
   backgroundColor: '#fbcfe8',

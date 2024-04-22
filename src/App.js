@@ -95,16 +95,17 @@ TweenLite.fromTo(title, 1,
   {
   backgroundColor: '#fbcfe8',
   x: 200,
+  repeat: -1
 }
 );
 
-TweenLite.to(title, 1, {
-  backgroundColor: '#fbcfe8',
-  x: 200,
-  repeat: -1
-  // onStart: hello,
-  // onComplete: done
-});
+// TweenLite.to(title, 1, {
+//   backgroundColor: '#fbcfe8',
+//   x: 200,
+//   repeat: -1
+//   // onStart: hello,
+//   // onComplete: done
+// });
 
 // TweenLite.to(title, 1, {
 //   backgroundColor: '#a5f3fc',

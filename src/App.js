@@ -87,11 +87,23 @@ const done = () => {
   window.alert('done');
 }
 
+TweenLite.fromTo(title, 1, 
+  {
+    backgroundColor: '#a5f3fc',
+    x: -200,
+  },
+  {
+  backgroundColor: '#fbcfe8',
+  x: 200,
+}
+);
+
 TweenLite.to(title, 1, {
   backgroundColor: '#fbcfe8',
   x: 200,
-  onStart: hello,
-  onComplete: done
+  repeat: -1
+  // onStart: hello,
+  // onComplete: done
 });
 
 // TweenLite.to(title, 1, {
